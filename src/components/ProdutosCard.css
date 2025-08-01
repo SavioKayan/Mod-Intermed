@@ -1,0 +1,121 @@
+.card-produto {
+  width: 280px;
+  
+  background-color: #ffffff;
+  border-radius: 12px;
+  border: 1px solid #4012bd;
+  box-shadow: 0 8px 12px rgb(0, 0, 0);
+  padding: 20px;
+  margin-bottom: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-produto:hover {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.801);
+}
+
+.card-topo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.estrelas {
+  color: rgb(45, 8, 179);
+  font-size: 18px;
+}
+
+.editar {
+  background: none;
+  border: none;
+  font-size: 18px;
+}
+
+.card-produto img {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+  border-radius: 8px;
+  margin: 16px 0;
+  
+}
+
+.descricao {
+  text-align: left;
+  margin-bottom: 12px;
+  font-size: small;
+  height: 77px;
+  color: #000000
+}
+
+.d1 {
+  color: #000000
+}
+.d2 {
+  color: #000000
+}
+
+.d1-descricao {
+  margin: 8px 0;
+  text-align: center;
+  font-size: 20px;
+}
+
+.d2-descricao {
+  font-size: 15px;
+  color: #000000;
+}
+
+
+.preco {
+  text-align: right;
+  color: #000000;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.p1-preco {
+  font-size: 14px;
+}
+
+.p2-preco {
+  font-size: 12px;
+  color: #000000;
+}
+
+.remover {
+  background-color: #6a10b4;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s ease;
+}
+
+.remover:hover {
+  background-color: #000000;
+}
+
+@media (max-width: 768px) {
+  .card-produto {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .card-produto {
+    padding: 16px;
+  }
+
+  .card-produto img {
+    height: 160px;
+  }
+
+  .p1-preco, .p2-preco, .d1-descricao, .d2-descricao {
+    font-size: 13px;
+  }
+}

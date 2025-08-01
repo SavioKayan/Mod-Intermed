@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+  --color-neutral-0: #000000;
+  --color-neutral-10: #4406a8;
+  --color-neutral-30: #fdfeff;
+  --color-neutral-40: #ffffff;
+  --color-highlight: #ffffff;
+}
+
+* {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  letter-spacing: 1px;
+}
+ 
+
+#footer {
+  background-color: #ffffff;
+  color: #F4F9FF;
+  padding: 3rem;
+}
+
+footer {
+  width: 100%;
+  color: var(--color-neutral-40);
+}
+
+/* --- AJUSTE: layout centralizado --- */
+#footer_content {
+  background-color: var(--color-neutral-10);
+  display: grid;
+  grid-template-columns: auto repeat(1, 2fr);
+  align-items: center;
+  justify-items: center;
+  padding: 2rem;
+  gap: 4rem;
+  margin-top: 20px;
+}
+
+
+.footer-class {
+  list-style: none;
+  padding: 0;
+  gap: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.footer-class li {
+  margin: 0.3rem 0;
+}
+
+/* Newsletter */
+#footer_subscribe p {
+  color: var(--color-neutral-40);
+  font-size: 0.95rem;
+  line-height: 1.4;
+  margin-bottom: 0.5rem;
+}
+
+
+/* Copyright */
+#footer_copyright {
+  text-align: center;
+  font-size: 0.8rem;
+  padding: 1rem 0;
+  color: var(--color-highlight);
+  background-color: var(--color-neutral-0);
+}
+
+/* Responsivo */
+@media screen and (max-width: 768px) {
+  #footer_content {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  #footer_content {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 2rem 1rem;
+  }
+
+}

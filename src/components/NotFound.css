@@ -1,0 +1,32 @@
+.not{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #ffffff;
+    padding: 24px 32px;
+    background: linear-gradient(135deg, #f71a1a, #d60000);
+    border-radius: 16px;
+    max-width: 90%;
+    margin: 40px auto;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.918);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.75rem;
+        padding: 20px 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+        padding: 16px 20px;
+        border-radius: 12px;
+    }
+}

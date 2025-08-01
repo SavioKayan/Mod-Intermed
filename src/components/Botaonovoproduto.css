@@ -1,0 +1,36 @@
+.botao-novo-produto {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 10px;
+  background-color: hsl(0, 0%, 0%);
+}
+
+.novo-produto {
+  background-color: #ffffff;
+  color: #4012bd;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+  box-shadow: 0 4px 10px #4012bd;
+}
+
+.novo-produto:hover {
+  background-color: #4012bd;
+  color: white;
+}
+
+@media (max-width: 480px) {
+  .novo-produto {
+    width: 100%;
+    max-width: 320px;
+    font-size: 15px;
+    padding: 12px 20px;
+  }
+}
