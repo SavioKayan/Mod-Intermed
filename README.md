@@ -1,2 +1,2 @@
 # Mod-Intermed
-Recuperação
+Projeto realizado para recuperação da nota do módulo intermediário.
